@@ -11,10 +11,18 @@ $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
 // grid variables
 $gutter-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 // font sizes
 $default-font-size: 1.6rem;
 $button-font-size: 1.2rem;
+// breakpoints
+// 1em = 16px, use ems because they are more accessible for all browsers
+$mobile: 37.5em; // 600px
+$tablet-port: 56.25em; // 900px
+$tablet-land: 75em; // 1200px

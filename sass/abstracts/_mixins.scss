@@ -5,3 +5,35 @@
         clear: both;
     }
 }
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// media query manager
+/*
+$breakponint argument choices: 
+    mobile
+    tablet-pot
+    tablet-land
+*/
+@mixin respond ($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: $mobile) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet-port {
+        @media (max-width: $tablet-port) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet-land {
+        @media (max-width: $tablet-land) {
+            @content
+        }
+    }
+}
