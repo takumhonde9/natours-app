@@ -1,20 +1,32 @@
 .feature-box {
-    background-color: rgba($color-white, 0.8);
-    font-size: 1.3rem;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-    transition: transform 0.3s;
-    &__icon {
-        background-image: linear-gradient( $color-primary-light, $color-primary-dark);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.3rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tablet-port) {
+    padding: 2rem;
+  }
+  &__icon {
+    background-image: linear-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+
+    @include respond(tablet-port) {
+      margin: 0rem;
     }
-    &:hover {
-        transform: translateY(-1.3rem) scale(1.03);
-    }
-    &__text {}
+  }
+  &:hover {
+    transform: translateY(-1.3rem) scale(1.03);
+  }
+  &__text {
+  }
 }

@@ -4,13 +4,17 @@
   font-size: 1.4rem;
 
   @include respond(tablet-port) {
-    padding: 8rem  0;
+    padding: 8rem 0;
   }
 
   &__logo-box {
     // inline elem so behaves like text
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tablet-port) {
+      margin-bottom: 6rem;
+    }
   }
   &__logo {
     width: 15rem;
