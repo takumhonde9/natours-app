@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/takumhonde9/natours-app#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
