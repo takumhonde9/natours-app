@@ -11,6 +11,9 @@
     width: 90%;
     display: block;
     transition: all 0.3s;
+    @include respond(tablet-port) {
+      width: 100%;
+    }
     // new pseudo-element
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
@@ -49,6 +52,11 @@
   &__radio-group {
     width: 48%;
     display: inline-block;
+
+    @include respond(tablet-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
   &__radio-label {
     font-size: $default-font-size;
